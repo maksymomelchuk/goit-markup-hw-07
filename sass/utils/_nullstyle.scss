@@ -1,0 +1,49 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: $color-text;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0px 15px;
+  margin: 0px auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  padding: 94px 0px;
+}
+
+.section-no-padding-bottom {
+  padding-bottom: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+
+.list {
+  list-style: none;
+}

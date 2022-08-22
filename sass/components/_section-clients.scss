@@ -1,0 +1,33 @@
+.clients {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+
+  &__link {
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    color: #afb1b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Transition */
+    transition-property: color, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $color-accent;
+      border: 1px solid $color-accent;
+    }
+  }
+
+  &__icon {
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+    fill: currentColor;
+  }
+}
