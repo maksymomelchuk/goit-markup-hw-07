@@ -24,10 +24,15 @@ ul {
 
 .section {
   padding: 94px 0px;
-}
 
-.section-no-padding-bottom {
+  &--no-padding-bottom {
   padding-bottom: 0;
+  }
+
+  &--team {
+  background-color: $color-bg-light;
+
+  }
 }
 
 .visually-hidden {
@@ -46,4 +51,23 @@ ul {
 
 .list {
   list-style: none;
+}
+
+.h2-title {
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.166;
+    letter-spacing: 0.03em;
+  }
+
+.link-accent {
+  /* Transition */
+  transition-property: color $transition;
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
 }

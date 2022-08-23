@@ -1,0 +1,34 @@
+.navigation {
+  display: flex;
+  &__item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+
+  &__link--active {
+    color: $color-accent;
+
+    &::after {
+      content: '';
+      width: 100%;
+      height: 4px;
+      background-color: $color-accent;
+      border-radius: 2px;
+      position: absolute;
+      left: 0;
+      top: 48px;
+    }
+  }
+}

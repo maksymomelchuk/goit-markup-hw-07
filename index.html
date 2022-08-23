@@ -21,14 +21,14 @@
       <!-- Flex container -->
       <div class="container header__container">
         <!-- Logo -->
-        <a href="./index.html" class="logo link-accent"
-          >Web<span class="logo__header">Studio</span></a
+        <a href="./index.html" class="logo"
+          >Web<span class="logo--header">Studio</span></a
         >
         <!-- Navigation bar -->
         <nav>
           <ul class="navigation list">
             <li class="navigation__item">
-              <a class="navigation__link link-accent current" href="#">Студія</a>
+              <a class="navigation__link link-accent navigation__link--active" href="#">Студія</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link link-accent" href="./portfolio.html">Портфоліо</a>
@@ -61,14 +61,14 @@
         <div class="hero__bg">
           <div class="container">
             <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-            <button data-modal-open class="order-button" type="button">
+            <button data-modal-open class="button button--order" type="button">
               Замовити послугу
             </button>
           </div>
         </div>
       </section>
       <!-- Our advantages -->
-      <section class="section section-no-padding-bottom">
+      <section class="section section--no-padding-bottom">
         <div class="container">
           <h2 class="visually-hidden">Про нас</h2>
           <!-- Our job description -->
@@ -386,8 +386,8 @@
       <div class="container footer__container">
         <!-- Footer logo -->
         <div>
-          <a href="./index.html" class="logo link-accent"
-            >Web<span class="logo__footer">Studio</span></a
+          <a href="./index.html" class="logo"
+            >Web<span class="logo--footer">Studio</span></a
           >
           <!-- Footer contacts -->
           <address>
@@ -409,7 +409,9 @@
                 >
               </li>
               <li class="footer-contacts__item">
-                <a class="footer-contacts__link link-accent" href="tel:+38991111111"
+                <a
+                  class="footer-contacts__link link-accent"
+                  href="tel:+38991111111"
                   >+38 099 111 11 11</a
                 >
               </li>
@@ -419,31 +421,31 @@
         <!-- Footer links -->
         <div class="footer-links">
           <h3 class="footer-links__title">приєднуйтесь</h3>
-          <ul class="footer-links__list list social">
+          <ul class="list social social--footer">
             <li>
-              <a class="footer-links__link social__link" href="#">
-                <svg class="social__icon footer-links__icon">
+              <a class="social__link social__link--footer" href="#">
+                <svg class="social__icon social__icon--foter">
                   <use href="./images/sprite.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="footer-links__link social__link" href="#">
-                <svg class="social__icon footer-links__icon">
+              <a class="social__link social__link--footer" href="#">
+                <svg class="social__icon social__icon--foter">
                   <use href="./images/sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="footer-links__link social__link" href="#">
-                <svg class="social__icon footer-links__icon">
+              <a class="social__link social__link--footer" href="#">
+                <svg class="social__icon social__icon--foter">
                   <use href="./images/sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="footer-links__link social__link" href="#">
-                <svg class="social__icon footer-links__icon">
+              <a class="social__link social__link--footer" href="#">
+                <svg class="social__icon social__icon--foter">
                   <use href="./images/sprite.svg#linkedin"></use>
                 </svg>
               </a>
@@ -463,7 +465,7 @@
               name="subscribe"
               id="subscribe"
             />
-            <button class="subscribe-btn" type="submit">Підписатися</button>
+            <button class="button button--subscribe" type="submit">Підписатися</button>
           </div>
         </form>
       </div>
@@ -473,35 +475,35 @@
       <div class="modal">
         <button type="button" data-modal-close class="modal-close-btn"></button>
         <form class="form">
-          <span class="form-title">Залиште свої дані, ми вам передзвонимо</span>
-          <div class="form-field">
-            <label class="form-label" for="name">Ім'я</label>
-            <input class="form-input" type="text" name="name" id="name" />
-            <svg class="form-icon" width="12" height="12">
+          <span class="form__title">Залиште свої дані, ми вам передзвонимо</span>
+          <div class="form__field">
+            <label class="form__label" for="name">Ім'я</label>
+            <input class="form__input" type="text" name="name" id="name" />
+            <svg class="form__icon" width="12" height="12">
               <use href="./images/sprite.svg#name"></use>
             </svg>
           </div>
 
-          <div class="form-field">
-            <label class="form-label" for="tel">Телефон</label>
-            <input class="form-input" type="tel" name="tel" id="tel" />
-            <svg class="form-icon" width="12" height="12">
+          <div class="form__field">
+            <label class="form__label" for="tel">Телефон</label>
+            <input class="form__input" type="tel" name="tel" id="tel" />
+            <svg class="form__icon" width="12" height="12">
               <use href="./images/sprite.svg#phone"></use>
             </svg>
           </div>
 
-          <div class="form-field">
-            <label class="form-label" for="email">Пошта</label>
-            <input class="form-input" type="email" name="email" id="email" />
-            <svg class="form-icon" width="12" height="12">
+          <div class="form__field">
+            <label class="form__label" for="email">Пошта</label>
+            <input class="form__input" type="email" name="email" id="email" />
+            <svg class="form__icon" width="12" height="12">
               <use href="./images/sprite.svg#mail"></use>
             </svg>
           </div>
 
-          <div class="form-field">
-            <label class="form-label" for="comment">Коментар </label>
+          <div class="form__field">
+            <label class="form__label" for="comment">Коментар </label>
             <textarea
-              class="form-input form-input-textarea"
+              class="form__input form__input--textarea"
               name="comment"
               cols="30"
               rows="10"
@@ -509,20 +511,20 @@
               id="comment"
             ></textarea>
           </div>
-          <div class="form-field form-field-policy">
-            <label class="form-label-policy" for="policy">
+          <div class="form__field policy">
+            <label class="policy" for="policy">
               <input
-                class="form-input-policy"
+                class="policy__input"
                 type="checkbox"
                 name="policy"
                 id="policy"
               />
-              <span class="policy-icon"></span>
+              <span class="policy__icon"></span>
               Погоджуюся з розсилкою та приймаю
-              <a class="policy-link" href="#">Умови договору</a>
+              <a class="policy__link" href="#">Умови договору</a>
             </label>
           </div>
-          <button class="submit-btn" type="submit">Відправити</button>
+          <button class="button button--submit" type="submit">Відправити</button>
         </form>
       </div>
     </div>
